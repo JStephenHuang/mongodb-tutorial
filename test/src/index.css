@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+textarea {
+  resize: none;
+}
+
+@layer components {
+  .navbar {
+    @apply  w-full h-[10%] 
+    flex items-center
+    border-b-2
+  }
+  .navbar-link {
+    @apply m-5 text-[24px] font-bold hover:text-blue-600
+  }
+  .navbar-link-active {
+    @apply m-5 text-[24px] font-bold text-blue-600
+  }
+}
+
+@layer components {
+  .button {
+    @apply w-[15rem] h-[15rem] p-5 m-2 font-light
+    flex flex-col justify-around text-left 
+    hover:shadow-xl ease-in-out duration-200
+    text-gray-600 shadow-lg rounded-md border
+  }
+  .button-link {
+    @apply text-blue-600 hover:underline
+  }
+}
+
+@layer components {
+  .bubbles {
+    @apply p-5 m-2 font-light
+    grid place-items-center text-left 
+    hover:shadow-lg ease-in-out duration-200
+    text-gray-600 rounded-md border
+  }
+  .bubbles-active {
+    @apply p-5 m-2 font-light
+    grid place-items-center text-left 
+    hover:shadow-xl ease-in-out duration-200
+    text-gray-600 rounded-md border-2 border-blue-500
+  }
+  .section {
+    @apply m-2 w-full
+  }
+}
+
+
+
